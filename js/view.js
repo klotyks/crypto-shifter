@@ -3,20 +3,39 @@ function renderInputTotalBalance(sumUsd) {
   elInputText.value = sumUsd
 }
 
-function renderBtc() {
-  // body
+function renderBtc(num) {
+  const elBtcInput = document.querySelector('#edit-btc')
+  elBtcInput.value = num
 }
 
-function renderEtc() {
-  // body
+function renderEtc(num) {
+  const elEtcInput = document.querySelector('#edit-etc')
+  elEtcInput.value = num
 }
 
-function renderLtc() {
-  // body
+function renderLtc(num) {
+  const elLtcInput = document.querySelector('#edit-ltc')
+  elLtcInput.value = num
 }
 
-function renderDoge() {
-  // body
+function renderDoge(num) {
+  const elDogeInput = document.querySelector('#edit-doge')
+  elDogeInput.value = num
 }
 
-const elInputTotalBalance = document.querySelector('#total_balance')
+// function onInputTotalBalance(e) {
+//   const balance = e.target.value
+//   handleSetCurrentBalance(balance)
+// }
+
+function onClickButtonSet() {
+  const elInputTotalBalance = document.querySelector('#total_balance')
+  const sumUsd = elInputTotalBalance.value
+  handleSetCurrentBalance(sumUsd)
+}
+
+// const elInputTotalBalance = document.querySelector('#total_balance')
+const elButtonSetUsd = document.querySelector('#button_set')
+
+// elInputTotalBalance.oninput = onInputTotalBalance
+elButtonSetUsd.onclick = onClickButtonSet

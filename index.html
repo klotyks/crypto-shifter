@@ -15,7 +15,7 @@
           <input type="text" name="input" id="total_balance" />
         </div>
         <div class="field_button">
-          <input type="button" value="Set USD" />
+          <input type="button" value="Set USD" id="button_set" />
         </div>
         <hr />
       </div>
@@ -33,7 +33,7 @@
             type="range"
             ctrl="btc"
             name="btc"
-            id=""
+            id="range-btc"
             min="0"
             max="0"
             value="0"
@@ -53,7 +53,7 @@
             type="range"
             ctrl="etc"
             name="etc"
-            id=""
+            id="range-etc"
             min="0"
             max="0"
             value="0"
@@ -73,7 +73,7 @@
             type="range"
             ctrl="ltc"
             name="ltc"
-            id=""
+            id="range-ltc"
             min="0"
             max="0"
             value="0"
@@ -93,7 +93,7 @@
             type="range"
             ctrl="doge"
             name="doge"
-            id=""
+            id="range-doge"
             min="0"
             max="0"
             value="0"
@@ -101,9 +101,6 @@
         </div>
       </div>
     </div>
-
-    <script src="./js/shifter.js"></script>
-    <script src="./js/script.js"></script>
 
     <script src="/js/api.js"></script>
     <script src="/js/model.js"></script>
