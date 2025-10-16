@@ -34,8 +34,14 @@ function onClickButtonSet() {
   handleSetCurrentBalance(sumUsd)
 }
 
+function onInputRangeBtc() {
+  console.log('hello')
+}
+
 // const elInputTotalBalance = document.querySelector('#total_balance')
 const elButtonSetUsd = document.querySelector('#button_set')
+const elInputBtcRange = document.querySelector('#range-btc')
 
 // elInputTotalBalance.oninput = onInputTotalBalance
 elButtonSetUsd.onclick = onClickButtonSet
+elInputBtcRange.oninput = onInputRangeBtc
